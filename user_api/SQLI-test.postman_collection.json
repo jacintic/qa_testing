@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ba0bc5d5-7a98-4110-9846-401d36bed647",
+		"name": "SQLI-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12311009"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "johnhasareallylonganduniqueemail1986@yopmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ThisIsJohn'sPassword68$",
+							"type": "text"
+						},
+						{
+							"key": "title ",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "10/10/1986",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1986",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "John",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Johnson",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "SQLI",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "C\\ Sardenya 75 Atico 4ª",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Spain",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "08065",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Catalonia",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Barcelona",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "658664837",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/getUserDetailByEmail?email=johnhasareallylonganduniqueemail1986@yopmail.com",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"getUserDetailByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "johnhasareallylonganduniqueemail1986@yopmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
