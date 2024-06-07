@@ -1,7 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
-import { generateTestEmail, generateFinalEmail, randomString } from '../utils/helpers';
-
 export class SuccessPage {
   readonly page: Page;
   readonly pageUrl: string;
