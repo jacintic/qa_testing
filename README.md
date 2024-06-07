@@ -14,7 +14,7 @@ List of features:
   - this fixture is integrated in the `.forEach` hook in the test file
     - ideally, this fixture would be integrated as an auto-called fixture and there would be no need to add it to each test file
 3. Utils
-  - an utils file has been added with helper methods to aid in the filling of the forms and keep the POM and test files clean
+  - an utils file has been added with helper methods to aid in the filling of the forms and keep the POM and test files clean.
   
 ---
   
@@ -28,5 +28,7 @@ Worth noting, perhaps is that this API took the POST (for user creation) and GET
   
 Also worth noting is that the main parameter for the API to set users as unique and thus avoid user duplication is the `email` field. I've taken this into consideration and I've attached a new email that I haven't used just so it will run fine the first time it'll be called.  
   
+---
+  
 ## Final notes  
-Thank you for this chance to test my skills I've had fun with it. Fr your information, I have completed the exercises in approximately 4 hours. Most time has been spent on the Web Automation project.
+Thank you for this chance to test my skills I've had fun with it. For your information, I have completed the exercises in approximately 4 hours. Most time has been spent on the Web Automation project.
