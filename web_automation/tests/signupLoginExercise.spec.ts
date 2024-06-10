@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
   const blockUndesiredRequests = new BlockRequests(page);
 });
 
-test('getting started should contain table of contents', async ({ page }) => {
+test('Signup Test', async ({ page }) => {
   const homePage = new HomePage(page);
   const signUpPage = new SignUpPage(page);
   const signUpPageLongForm = new SignUpPageLongForm(page);
