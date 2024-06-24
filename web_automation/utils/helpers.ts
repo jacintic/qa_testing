@@ -1,4 +1,4 @@
-export const generateTestEmail = (): string => `qa_testing_exercise${dateGenerator()}${randomString(5)}@yopmail.com`
+export const generateTestEmail = (): string => `qa_testing_exercise${dateGenerator()}${randomString(7)}@yopmail.com`
 const dateGenerator = (): string => {
   const currentDate = new Date();
   return currentDate.toLocaleDateString().replace(/\//g,"-")
